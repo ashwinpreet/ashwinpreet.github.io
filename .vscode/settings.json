@@ -1,0 +1,9 @@
+{
+    "prettier.printWidth": 600,
+    "prettier.semi": false,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "none",
+    "javascript.preferences.quoteStyle": "single",
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true
+}
