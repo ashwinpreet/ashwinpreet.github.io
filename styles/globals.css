@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #f9f9f9;
+    color: #08070b;
 }
 
 a {
@@ -13,4 +16,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.page-header{
+    display: flex;
+}
+
+#logo-wrap{
+    flex: 0;
+    width: 50px;
+    padding-top: 12px;
+}
+
+#logo-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto 8px;
+    cursor: pointer;
+}
+
+.page-header{
+    
+    border-bottom: 1px solid #ececec;
+    height: 60px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    background-color: #f2f2f2;
+    
+}
+
+#nav-wrap{
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-left: 200px;
+}
+
+#nav-wrap .menu-item{
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+    padding-top: 16px;
 }
