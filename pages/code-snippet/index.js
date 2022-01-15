@@ -1,5 +1,29 @@
-const CodeSnippetList = (props) => {
-    return <div>Code Snippet List Page</div>
+import { getSortedPostsData } from '../../lib/code-snippet'
+import Link from 'next/link'
+
+export async function getStaticProps() {
+	const allPostsData = getSortedPostsData()
+	return {
+		props: {
+			allPostsData
+		}
+	}
 }
 
-export default CodeSnippetList
+export default function Blog({ allPostsData }) {
+	return (
+		<div>
+			<ul>
+				{allPostsData.map(({ id, date, title }, index) => (
+					<li key={index}>
+						<Link href={`/code-snippet/${id}`}>
+							<a>{title}</a>
+						</Link>
+						<br />
+						<span>{date}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	)
+}
