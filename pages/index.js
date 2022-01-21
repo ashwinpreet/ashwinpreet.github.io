@@ -12,6 +12,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<strong>Ashwin Preetham Lobo</strong>
 				<div>Principal Engineer at Envestnet | Yodlee</div>
+				<div style={{ color: '#ececec' }}>Press ⌘ + k to Start</div>
 			</main>
 		</div>
 	)
