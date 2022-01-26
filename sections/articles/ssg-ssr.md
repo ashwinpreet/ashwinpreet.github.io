@@ -1,6 +1,7 @@
 ---
 title: 'When to Use Static Generation v.s. Server-side Rendering'
 date: '2022-01-15'
+tags: 'react, pre-render, SSG, SSR'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
