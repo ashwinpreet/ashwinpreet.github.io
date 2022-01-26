@@ -1,7 +1,8 @@
-import React from 'react'
-import '../styles/globals.css'
+import React, { useState } from 'react'
+import '../styles/main.scss'
+import 'remixicon/fonts/remixicon.css'
 import BaseLayout from '../components/BaseLayout'
-import { useRouter } from 'next/router'
+import Router, { useRouter } from 'next/router'
 import { KBarAnimator, KBarProvider, KBarPortal, useDeepMatches, KBarPositioner, KBarSearch, KBarResults } from 'kbar'
 
 function MyApp({ Component, pageProps }) {
@@ -38,6 +39,11 @@ function MyApp({ Component, pageProps }) {
 			perform: () => (window.location.pathname = 'about')
 		}
 	]
+
+	React.useEffect(() => {
+		const isOsDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+		document.querySelector('html').dataset.theme = `theme-${isOsDark ? 'dark' : 'light'}`
+	}, [])
 
 	return (
 		<KBarProvider actions={actions}>

@@ -1,3 +1,5 @@
+@use 'variables';
+
 html,
 body {
   padding: 0;
@@ -6,7 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     -webkit-font-smoothing: antialiased;
     background: #f9f9f9;
-    color: #08070b;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 a {
@@ -18,7 +21,7 @@ a {
   box-sizing: border-box;
 }
 
-.page-header{
+.site-header{
     display: flex;
 }
 
@@ -57,4 +60,22 @@ a {
     margin-right: 16px;
     cursor: pointer;
     padding-top: 16px;
+}
+
+footer{
+    text-align: center;
+}
+
+#footer-wrap{
+    padding: 0px;
+    margin: 10px auto;
+
+    .footer-element{
+        display: inline-block;
+        margin-right: 16px;
+    }
+
+    .footer-icon{
+        font-size: 20px;
+    }
 }
