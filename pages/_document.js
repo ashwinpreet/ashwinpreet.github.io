@@ -19,6 +19,7 @@ export default class extends Document {
 					<meta property='og:type' content='website' />
 
 					<link rel='shortcut icon' href='/favicon.svg' />
+					<link rel='stylesheet' href='/font/font.css' type='text/css' />
 
 					<script async src='https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}'></script>
 					<script
