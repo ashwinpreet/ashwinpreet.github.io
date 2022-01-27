@@ -7,17 +7,17 @@ const BaseLayout = (props) => {
 	let menuOptions = [
 		{
 			key: 'blog',
-			label: 'Blog',
+			label: 'BLOG',
 			path: '/blog'
 		},
 		{
 			key: 'code-snippets',
-			label: 'Code Snippets',
+			label: 'CODE SNIPPETS',
 			path: '/code-snippet'
 		},
 		{
 			key: 'about',
-			label: 'About',
+			label: 'ABOUT',
 			path: '/about'
 		}
 	]
@@ -81,6 +81,7 @@ const BaseLayout = (props) => {
 					</div>
 				</div>
 				<div style={{ fontSize: 24, margin: 'auto', textAlign: 'center', marginTop: 20, fontFamily: 'Lato-Bold' }}>Ashwin Preetham Lobo</div>
+				<div style={{ fontSize: 16, margin: 'auto', textAlign: 'center', marginTop: 8 }}>Frontend Developer</div>
 				<div>
 					<ul id={'nav-wrap'}>
 						{menuOptions.map((menuItem) => {
@@ -107,10 +108,10 @@ const BaseLayout = (props) => {
 				</ul>
 			</aside>
 			<div className={'site-content'}>
-				<div style={{ height: 24 }}>
+				<div style={{ height: 24, textAlign: 'right', marginRight: 12, paddingTop: 12 }}>
 					{_theme && (
 						<span>
-							<i onClick={handleThemeChange} className={_theme == 'theme-dark' ? 'ri-sun-line' : 'ri-moon-line'} style={_theme == 'theme-dark' ? { color: 'white', fontSize: 20 } : { color: 'black', fontSize: 20 }} />
+							<i onClick={handleThemeChange} className={_theme == 'theme-dark' ? 'ri-sun-line' : 'ri-moon-line'} style={_theme == 'theme-dark' ? { color: 'white', fontSize: 24, cursor: 'pointer' } : { color: 'black', fontSize: 24, cursor: 'pointer' }} />
 						</span>
 					)}
 				</div>
