@@ -1,0 +1,32 @@
+
+aside.side-bar{
+    width: 300px;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    background: black;
+    color: white;
+    top: 0px;
+}
+
+.site-content{
+    margin-left: 300px;
+}
+
+.inner-content{
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#footer-wrap{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+
+    .footer-element{
+        display: inline-block;
+        margin-right: 12px;
+    }
+}
+
