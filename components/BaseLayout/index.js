@@ -80,8 +80,9 @@ const BaseLayout = (props) => {
 						<img src='/favicon.svg' width={100} height={100} style={{ borderRadius: '50%', height: 100, width: 100 }} />
 					</div>
 				</div>
-				<div style={{ fontSize: 24, margin: 'auto', textAlign: 'center', marginTop: 20, fontFamily: 'Lato-Bold' }}>Ashwin Preetham Lobo</div>
-				<div style={{ fontSize: 16, margin: 'auto', textAlign: 'center', marginTop: 8 }}>Frontend Developer</div>
+				<div>
+					<div style={{ textAlign: 'center', marginTop: 16, fontSize: 18, fontWeight: 'bold' }}>Ashwin Preetham Lobo</div>
+				</div>
 				<div>
 					<ul id={'nav-wrap'}>
 						{menuOptions.map((menuItem) => {
@@ -108,13 +109,13 @@ const BaseLayout = (props) => {
 				</ul>
 			</aside>
 			<div className={'site-content'}>
-				<div style={{ height: 24, textAlign: 'right', marginRight: 12, paddingTop: 12 }}>
+				{/* <div style={{ height: 24, textAlign: 'right', marginRight: 12, paddingTop: 12 }}>
 					{_theme && (
 						<span>
 							<i onClick={handleThemeChange} className={_theme == 'theme-dark' ? 'ri-sun-line' : 'ri-moon-line'} style={_theme == 'theme-dark' ? { color: 'white', fontSize: 24, cursor: 'pointer' } : { color: 'black', fontSize: 24, cursor: 'pointer' }} />
 						</span>
 					)}
-				</div>
+				</div> */}
 				<div className='inner-content'>{props.children}</div>
 			</div>
 		</div>
